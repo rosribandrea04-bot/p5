@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: pink;
+            --secondary-color: orange;
+        }
+
+        div section:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--primary-color);
+            flex-grow: 1;
+        }
+
+        div section:last-child {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            background-color: var(--secondary-color);
+            flex-grow: 1;
+        }
+
+        div {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        @media (max-width: 600px) {
+            div {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <section>
+            <p>hola</p>
+        </section>
+
+        <section>
+            <p>adeu</p>
+        </section>
+    </div>
+</body>
+</html>
